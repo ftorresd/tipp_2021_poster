@@ -1,0 +1,155 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Class options                        %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Orientation:                         %
+% portrait (default), landscape        %
+%                                      %
+% Paper size:                          %
+% a0paper (default), a1paper, a2paper, %
+% a3paper, a4paper, a5paper, a6paper   %
+%                                      %
+% Language:                            %
+% english (default), norsk             %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \documentclass[landscape]{uioposter}
+\documentclass[portrait]{uioposter}
+
+
+\usepackage{lipsum}                                % Dummy text
+\usepackage[figwidth = 0.98\linewidth]{todonotes}  % Dummy image (and more!)
+\usepackage[absolute, overlay]{textpos}            % Figure placement
+\setlength{\TPHorizModule}{\paperwidth}
+\setlength{\TPVertModule}{\paperheight}
+
+\usepackage[backend=biber,sorting=none,hyperref=true,style=numeric,isbn=false,doi=false,eprint=false,url=false,]{biblatex}
+\addbibresource{poster_bib.bib}
+\renewcommand*{\bibfont}{\tiny}
+
+
+
+
+\title{CMS RPC Upgrade Program}
+\author
+{%
+    Felipe Silva, on behalf of the CMS Collaboration
+    % \and
+    % Second Author%\inst{2}
+    % \and
+    % Third Author%\inst{1}
+}
+%% Optional:
+\institute
+{
+   Rio de Janeiro State University - Email: felipe.silva@cern.ch
+%    \and
+%    \inst{2} Department of Informatics
+}
+% Or:
+% \institute{Contact information}
+
+
+%% Remove footline:
+% \setbeamertemplate{footline}{}
+  
+
+\begin{document}
+\begin{frame}
+
+
+    % \vskip-2cm
+    \begin{block}{Abstract}
+        \vskip-1.5cm
+        \include{sections/abstract}
+    \end{block}
+
+\begin{columns}[onlytextwidth]
+
+
+\begin{column}{\textwidth/2 - 1cm}
+
+    \vskip-2cm
+    \begin{block}{CMS RPC Upgrade}
+        \vskip-1.5cm
+        \include{sections/cms_rpc_upgrade}
+    \end{block}
+
+    \vskip-2cm
+    \begin{block}{Link System}
+        \vskip-1.5cm
+        \include{sections/link_system}
+    \end{block}
+\end{column}
+
+
+\begin{column}{\textwidth/2 - 1cm}
+    \vskip-2cm
+    \begin{block}{iRPC FEB}
+        \vskip-1.5cm
+        \include{sections/irpc_feb}
+    \end{block}
+
+    \vskip-2cm
+    \begin{block}{Readout Electronics}
+        \vskip-1.5cm
+        \include{sections/readout_electronics}
+    \end{block}
+
+    \vskip-2cm
+    \begin{block}{Demonstrator}
+        \vskip-1.5cm
+        \include{sections/demonstrator}
+    \end{block}
+
+
+\end{column}
+
+
+% \begin{column}{\textwidth/3 - 2cm}
+%     % \begin{alertblock}{How do you make it pop?}
+%     %     Use an alert!
+%     % \end{alertblock}
+
+%     % \begin{block}{Acknowledgements}
+%     %     \lipsum[4]
+%     % \end{block}
+% \end{column}
+
+
+\end{columns}
+\vskip2cm
+\begin{columns}[onlytextwidth]
+
+\begin{column}{\textwidth/2 - 1cm}
+    % \vskip-2cm
+    \begin{block}{Conclusion}
+        \lipsum[75]
+    \end{block}
+\end{column}
+
+\begin{column}{\textwidth/2 - 1cm}
+    % \vskip-2cm
+    \begin{block}{References}
+        \cite{einstein,einstein2,knuthwebsite,latexcompanion}
+        \printbibliography
+    \end{block}
+\end{column}
+
+
+
+\end{columns}
+
+
+% FOOTNOTE
+
+% \begin{textblock}{1}(0.077, 0.93)
+%     % \color{white}
+%     % \sffamily
+%     % \textbf{TIPP 2021 - International Conference on Technology and Instrumentation in Particle Physics}
+    
+%     % \printbibliography
+    
+% \end{textblock}
+
+\end{frame}
+
+\end{document}
