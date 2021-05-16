@@ -235,7 +235,7 @@
         %     \insertinstitute
         % }
 
-        \begin{textblock}{1}(0.15, 0.02)
+        \begin{textblock}{1}(0.13, 0.02)
             \usebeamerfont{title in headline}
             \usebeamercolor{title in headline}
             \color{fg}
@@ -368,12 +368,15 @@
         \begin{minipage}{\textwidth-4ex}
              \setlength{\parskip}{1.5ex}
              \setlength{\abovecaptionskip}{1ex}
+             
 }
 
 
 \setbeamertemplate{block example end}
 {
+        \vskip-3cm    
         \end{minipage}
+        \vskip-3cm  
     \vskip0.2ex
     \end{beamercolorbox}
     \vskip3cm
