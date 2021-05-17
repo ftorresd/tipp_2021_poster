@@ -187,15 +187,15 @@
 
 \setbeamerfont{block body}{family = \rmfamily,
                            series = \mdseries,
-                           size   = \small}
+                           size   = \footnotesize}
 
 \setbeamerfont{block body example}{family = \rmfamily,
                                    series = \mdseries,
-                                   size   = \small}
+                                   size   = \footnotesize}
 
 \setbeamerfont{block body alerted}{family = \rmfamily,
                                    series = \mdseries,
-                                   size   = \small}
+                                   size   = \footnotesize}
 
 
 

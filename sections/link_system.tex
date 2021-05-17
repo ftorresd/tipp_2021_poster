@@ -23,7 +23,9 @@ In the CMS experiment, the RPC chambers are readout, controlled and monitored th
     \includegraphics[width=0.5\textwidth]{uioposter-images/link_system_board.png}
 \end{wrapfigure}
 
-The HL-LHC high rates will required an increase of the available TX bandwidth and time readout time resolution. The new link system is being developed around the use of modern components and FPGAs (Field Programmable Gate Array), following a radation hard design. The data transmission rate between the new Link system and CMS back-end electronics increases to 10.24 Gbps and resolution of the Muon hit time improves to 1.5 ns, close to the RPC chamber instrinsic resolution, which is achieved by implementeing a high resolution 96-channel Time-to-Digital Converter (TDC) in the link board FPGA. Each TDC channel comprised of 16 bins where each bin had a time scale of one sixteenth of the 25 ns. The experimental results showed that there existed a 1.56 ns resolution for the implemented TDC channels. The high speed data transmittions in obtained by the use of a GTX transceivers of the FPGA, plus preprocessing of data before sending to the GTX transmitter.
+The HL-LHC high rates will required an increase of the available TX bandwidth and time readout time resolution. The new link system is being developed around the use of modern components and FPGAs (Field Programmable Gate Array), following a radation hard design. \textbf{The data transmission rate between the new Link system and CMS back-end electronics increases to 10.24 Gbps and resolution of the Muon hit time improves to 1.5 ns}, close to the RPC chamber instrinsic resolution, which is achieved by implementeing a high resolution 96-channel Time-to-Digital Converter (TDC) in the link board FPGA. Each TDC channel comprised of 16 bins where each bin had a time scale of 25/16 ns. The experimental results showed that there existed a 1.56 ns resolution for the implemented TDC channels. 
+
+% The high speed data transmittions in obtained by the use of a GTX transceivers of the FPGA, plus preprocessing of data before sending to the GTX transmitter.
 
 
 
