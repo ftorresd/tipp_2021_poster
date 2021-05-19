@@ -14,13 +14,13 @@ In the CMS experiment, the RPC chambers are readout, controlled and monitored th
 
 % Details of the CMS RPC readout and control are shown in Figure~\ref{rpc_phase2_readout}.
 
-\begin{wrapfigure}[6]{r}{0.5\textwidth}
+\begin{wrapfigure}[6]{r}{0.6\textwidth}
     % \hskip1cm
-    \caption{\footnotesize A RPC Link Board prototype for Phase-2 Upgrade.}
+    \caption{\footnotesize Performance of implemented TDC.}
     \label{link_system}.
     % \hfill
     % \center
-    \includegraphics[width=0.49\textwidth]{uioposter-images/link_system_board.png}
+    \includegraphics[width=0.59\textwidth]{uioposter-images/link_system_tdc.png}
 \end{wrapfigure}
 
 % The HL-LHC high rates will required an increase of the available TX bandwidth and readout time resolution. 
@@ -35,7 +35,7 @@ The new link system is being developed around the use of modern components and F
 
 \hfill
 
-This is achieved by \textbf{(1) the use GTX transceivers of the FPGA}, plus preprocessing of data and (2) implementing a high resolution \textbf{96-channel Time-to-Digital Converter (TDC) in the link board FPGA}. Each TDC channel comprised of 16 bins where each bin had a time scale of 25/16 ns. The experimental results showed that there existed a 1.56 ns resolution for the implemented TDC channels. 
+This is achieved by \textbf{(1) the use GTX transceivers of the FPGA}, plus preprocessing of data and (2) implementing a high resolution \textbf{96-channel TDC in the link board FPGA}. Each TDC channel consists of 16 bins with a time scale of 25/16 ns. Figure 3, shows the emulated channel width, in agrrement with the expected 1.56 ns. 
 
 % The high speed data transmissions is obtained by the use of a GTX transceivers of the FPGA, plus preprocessing of data before sending to the GTX transmitter.
 
